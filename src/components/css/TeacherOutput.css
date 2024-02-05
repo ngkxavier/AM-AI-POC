@@ -8,13 +8,14 @@
 }
 
 .results-container {
+  color: black;
   display: flex;
   flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items horizontally */
   width: 50%; /* Adjust width as necessary */
   max-width: 800px; /* Maximum width */
   height: 100%; /* Full height of its container */
-  background-color: #f8f9fa; /* Light background for the results */
+  background-color: #fff; /* Light background for the results */
   padding: 1rem;
 }
 
@@ -34,6 +35,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
   border: 3px solid black;
   border-radius: 8px; /* Optional: rounds the corners */
+}
+
+.dynamic-text-container p {
+  color: black;
+  margin-bottom: 1rem;
 }
 
 /* Style paragraphs within the dynamic-text-container if needed */
