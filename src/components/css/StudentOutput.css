@@ -1,0 +1,21 @@
+/* TwoDivPage.css */
+
+.page-container {
+    display: flex;
+  }
+  
+  .left-div {
+    width: 70%; /* Adjust the width as needed */
+    height: 400px; /* Set a fixed height */
+    outline: 2px solid #000;
+    padding: 10px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-right: 400px; /* Add margin for spacing */
+  }
+  
+  .right-div {
+    width: 30%; /* Adjust the width as needed */
+    outline: 2px solid #000;
+    padding: 10px;
+  }
+  

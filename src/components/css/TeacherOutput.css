@@ -1,0 +1,42 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  padding: 2rem; /* Padding around the content */
+  height: calc(100vh - 4rem); /* Full height minus padding */
+  background-color: #fff; /* White background */
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  width: 50%; /* Adjust width as necessary */
+  max-width: 800px; /* Maximum width */
+  height: 100%; /* Full height of its container */
+  background-color: #f8f9fa; /* Light background for the results */
+  padding: 1rem;
+}
+
+.grade-percentage {
+  font-size: 7rem; /* Large font size for the grade percentage */
+  color: #28a745; /* Green color for the percentage (adjust as needed) */
+  margin-bottom: 2rem; /* Margin below the percentage */
+}
+
+.dynamic-text-container {
+  overflow-y: auto; /* Allows scrolling for overflow content */
+  height: 300px; /* Adjust height as necessary */
+  width: 600px; /* Full width of its container */
+  background-color: white; /* Blue background for dynamic text */
+  color: black; /* Text color */
+  padding: 1rem; /* Padding inside the text container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+  border: 3px solid black;
+  border-radius: 8px; /* Optional: rounds the corners */
+}
+
+/* Style paragraphs within the dynamic-text-container if needed */
+.dynamic-text-container p {
+  margin-bottom: 1rem; /* Adds space between paragraphs */
+}

@@ -1,0 +1,104 @@
+/* ErrorPopup.css */
+
+.error-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.8) to control opacity */
+  color: #fff;
+  padding: 200px; /* Adjust padding to increase size */
+  border-radius: 10px; /* Adjust border radius for rounded corners */
+  text-align: center;
+  opacity: 0;
+  animation: show-new .7s ease-in-out;
+  z-index: 1000;
+  width: 100%;
+}
+
+.error-popup.visible {
+  display: block;
+  opacity: 1;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Saira';
+  font-size: 1rem;
+}
+
+#okbtn {
+  position: relative;
+
+  height: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #E6E6FA;
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+  width: 15%;
+}
+
+.hide {
+  animation: hide-new .7s ease-in-out;
+}
+
+#okbtn:hover {
+  color: black;
+  background: #7B68EE;
+}
+
+@keyframes show-new {
+  0% {
+    transform: translate(-50%, -50%) scale(0); /* Ensure it starts centered and scaled down */
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.0);
+  }
+}
+
+@keyframes hide-new {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+#keith{
+  color: #69faff;
+}
+
+#eugene{
+  color: #5490ff;
+}
+#linkurl{
+  color: #aea0fe;
+}
+
+mark{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+img{
+  height: 60px;
+
+
+}

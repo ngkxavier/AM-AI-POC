@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+.centered-container {
+  display: flex;
+  flex-direction: column; /* Ensures children are stacked vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.assignment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between form elements */
+}
+
+.box-outer {
+  overflow: hidden;
+  margin: auto;
+  position: relative; /* Needed for absolute positioning of bars */
+  width: auto; /* Adjust based on content */
+  height: auto; /* Adjust based on content */
+}
+
+.main_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem; /* Space for the animated bars */
+}
+
+.input-textarea {
+  min-height: 150px;
+  min-width: 300px;
+  max-width: 600px;
+  max-height: 300px;
+  width: 300px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  padding: 1rem;
+  font-size: 0.9rem;
+  border: 3px solid black;
+  border-radius: 15px;
+  outline: none;
+  background-color: white; /* Background color of the textarea */
+  color: black; /* Text color */
+}
+
+.bar {
+  position: absolute;
+  background: black; /* Color of the animated bars */
+  transition: all 0.5s linear;
+  animation-duration: 10s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.bar.top, .bar.bottom {
+  height: 0.5rem;
+  width: 50%;
+  animation-name: h-move;
+}
+
+.bar.right, .bar.left {
+  width: 0.5rem;
+  height: 100%;
+  animation-name: v-move;
+}
+
+.bar.top { top: 0; }
+.bar.right { right: 0; }
+.bar.bottom { bottom: 0; }
+.bar.left { left: 0; }
+
+@keyframes h-move {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20rem); } /* Adjust to the width of your textarea */
+}
+
+@keyframes v-move {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(20rem); } /* Adjust to the height of your textarea */
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  margin-top: 50px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  align-self: center;
+  border: 1px solid black;
+}
+
+.submit-button {
+  height: 5px; /* Adjusted to auto to accommodate padding */
+  width: 100px;
+  padding: 1rem 2rem; /* Provides top and bottom padding */
+  font-size: 1rem;
+  background-color: white; /* Adjust button background color */
+  color: black;
+  border-radius: 100px;
+  border: 3px solid black;
+  cursor: pointer;
+  text-align: center; /* Centers text horizontally */
+  display: inline-flex; /* Use flexbox for alignment */
+  align-items: center; /* Centers content vertically in a flex container */
+  justify-content: center; /* Centers content horizontally in a flex container */
+}
+
+.submit-button:hover  {
+  background-color: black; /* Adjust button background color */
+  color: white;
+  border: 3px solid white;
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}

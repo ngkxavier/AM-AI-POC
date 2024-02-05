@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.Title{
+    position: absolute;
+
+}
+.animated-title {
+    
+    color: white;
+    font-size: 1000px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Saira';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: textGlitch 3s ease-in-out infinite alternate;
+    z-index: 50;
+    position: absolute;
+    bottom: 200px;
+}
+
+.animated-element {
+    display: inline-block;
+    min-width: 0.2rem;
+    opacity: 0;
+    transform: translateY(2px);
+    animation: displayLetter 1s ease-in-out forwards alternate;
+    letter-spacing: 1px;
+    animation-delay: calc(0.05s * var(--i));
+}
+
+@keyframes displayLetter {
+	0% {
+    transform: translateY(2px);
+    color: black;
+    font-size: 10px;
+    opacity: 0;
+	}
+  10% {
+    opacity: 1;
+    font-size: 20px;
+    color: #0C55D8;
+  }
+  20% {
+    opacity: 0;
+    color: #084286;
+    font-size: 30px;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    color: purple;
+    font-size: 40px;
+    transform: translateY(1px);
+  }
+  60% {
+    opacity: 1;
+    color: #7701BC;
+    font-size: 50px;
+    transform: translateY(1px);
+  }
+	100% {
+    transform: translateY(0);
+    color: white;
+    font-size: 60px;
+    opacity: 1;
+	}
+}
+
