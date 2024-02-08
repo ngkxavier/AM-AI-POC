@@ -22,7 +22,7 @@ const DevNotes = ({ showPopup } ) => {
         <h1>Developer Notes</h1>
         <p><b><eugene id='eugene'>Hi I am Eugene.</eugene> <keith id="keith">Hi I am Keith.</keith></b> Together we are developers at Aventis Metaverse.</p>
         <mark><p>This is our Proof of Concept for Artificial Intelligence in AI. Our models are trained specifically to tailor to the needs of faculty and students in our Graduate Diploma Program for Cyber Secuirty.</p>,
-        <p>For more information, do read our medium paper : <p></p><a href='https://medium.com/@AventisMetaverse/aventis-metaverse-wisdom-keeper-concept-paper-a6c02e7c5de9' id='linkurl'>https://medium.com/@AventisMetaverse/aventis-metaverse-wisdom-keeper-concept-paper-a6c02e7c5de9</a></p></mark>
+       </mark>
         <br></br><br></br><button id="okbtn"onClick={handleAcknowledge}>OK</button>
       </div>
     </div>
