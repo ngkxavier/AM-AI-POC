@@ -35,7 +35,6 @@ class App extends Component {
 
     return (
       <div className={containerClass}>
-        <DevNotes showPopup={true}/>
         {!student && !teacher && (
           <>
             <div className="split left" onMouseEnter={() => this.setHover('hover-left')} onMouseLeave={this.clearHover}>
