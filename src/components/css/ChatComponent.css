@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     color: black;
+    overflow-y: auto;
   }
   
   .App {
@@ -72,4 +73,5 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
   }
+  
   

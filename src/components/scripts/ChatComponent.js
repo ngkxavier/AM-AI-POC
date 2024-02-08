@@ -67,7 +67,7 @@ const ChatComponent = () => {
       });
   
       const apiRequestBody = {
-        "model": "ft:gpt-3.5-turbo-0613:personal::8nHpbh5t",
+        "model": "ft:gpt-3.5-turbo-0613:personal::8poo4CqU",
         "messages": [
           { role: "system", content: Testcontent },
           ...apiMessages,
@@ -88,12 +88,14 @@ const ChatComponent = () => {
   }
 
   return (
-    <div style={{ position:"relative", height: "800px", width: "700px"  }}>
+    <div style={{ position:"relative", height: "100vh", width: "700px", display: "flex", justifyContent: "center",
+    alignItems: "center",
+    margin: "0 auto"  }}>
       <MainContainer>
         <ChatContainer>       
           <MessageList 
             scrollBehavior="smooth" 
-            typingIndicator={isTyping ? <TypingIndicator content="ChatGPT is typing" /> : null}
+            typingIndicator={isTyping ? <TypingIndicator content="Teaching Assistant is typing" /> : null}
           >
             {messages.map((message, i) => {
               //console.log(message)
